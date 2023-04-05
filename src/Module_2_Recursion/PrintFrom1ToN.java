@@ -10,16 +10,18 @@ public class PrintFrom1ToN {
         printReverse(n);
     }
     static void print(int x, int n) {
+        //Termination or base condition
         if(x > n)
             return;
         System.out.print(x + " ");
-        print(x+1,n);
+        print(x+1,n); //Recurrence relation
     }
 
     static void printReverse(int n) {
+        //Termination or base condition
         if(n == 0)
             return;
         System.out.print(n + " ");
-        printReverse(n-1);
+        printReverse(n-1); //recurrence relation
     }
 }
